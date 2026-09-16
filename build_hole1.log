@@ -1,0 +1,750 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Successfully connected to the License Client on channel: "LicenseClient-Admin" at "2026-09-11T11:11:54.1142588Z"
+[Licensing::Client] Error: Code 10 while verifying Licensing Client signature (process Id: 10388, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] Error: LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              3dc28eb388b349349bd45b94f309f316
+  Correlation Id:          a0a5698bbc9d645eb977c2844b2b82c7
+  External correlation Id: 1322785914215729581
+  Machine Id:              Z+GBfek0mKDUHWso+ViYO4/A6es=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.01s, handshake: 0.06s)
+[Licensing::IpcConnector] Successfully connected to the License Notification on channel: "LicenseClient-Admin-notifications" at "2026-09-11T11:11:54.1825023Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully updated license
+Built from '6000.0/release' branch; Version is '6000.0.25f1 (4859ab7b5a49) revision 4741547'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 65303 MB
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Serial number assigned to: "13469694904161-UnityPersXXXX"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Licensing::Client] Successfully resolved entitlement details
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:/Users/Admin/Bunny Pick
+-executeMethod
+BunnyPick.EditorTools.BunnyPickSceneBuilder.BuildScene
+-logFile
+build_hole1.log
+Successfully changed project path to: C:/Users/Admin/Bunny Pick
+C:/Users/Admin/Bunny Pick
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [16564]  Target information:
+
+Player connection [16564]  * "[IP] 192.168.1.237 [Port] 55504 [Flags] 2 [Guid] 2787324582 [EditorId] 2787324582 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OSH747V) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [16564] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [16564] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-21128" after 0.4 seconds.
+Library Redirect Path: Library/
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 65 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.collab-proxy@2.13.6 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.collab-proxy)
+    com.unity.ide.rider@3.0.31 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.ide.rider)
+    com.unity.ide.visualstudio@2.0.22 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.ide.visualstudio)
+    com.unity.inputsystem@1.11.2 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.inputsystem)
+    com.unity.test-framework@1.4.5 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.test-framework)
+    com.unity.timeline@1.8.7 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.timeline)
+    com.unity.visualscripting@1.9.4 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.visualscripting)
+    com.unity.ext.nunit@2.0.5 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.ext.nunit)
+    com.unity.2d.animation@10.1.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.animation)
+    com.unity.2d.pixel-perfect@5.0.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.pixel-perfect)
+    com.unity.2d.psdimporter@9.0.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.psdimporter)
+    com.unity.2d.spriteshape@10.0.6 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.spriteshape)
+    com.unity.2d.tilemap.extras@4.0.2 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.tilemap.extras)
+    com.unity.2d.aseprite@1.1.6 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.aseprite)
+    com.unity.searcher@4.9.2 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.searcher)
+    com.unity.burst@1.8.18 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.burst)
+    com.unity.mathematics@1.3.2 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.mathematics)
+    com.unity.collections@2.5.1 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.collections)
+    com.unity.2d.common@9.0.6 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.common)
+    com.unity.nuget.mono-cecil@1.11.4 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.nuget.mono-cecil)
+    com.unity.test-framework.performance@3.0.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.test-framework.performance)
+  Built-in packages:
+    com.unity.feature.2d@2.0.1 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.feature.2d)
+    com.unity.multiplayer.center@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.multiplayer.center)
+    com.unity.render-pipelines.universal@17.0.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.render-pipelines.universal)
+    com.unity.ugui@2.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.ugui)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.vr@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.vr)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.render-pipelines.core@17.0.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.render-pipelines.core)
+    com.unity.shadergraph@17.0.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.shadergraph)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.render-pipelines.universal-config)
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.sprite)
+    com.unity.2d.tilemap@1.0.0 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.2d.tilemap)
+    com.unity.rendering.light-transport@1.0.1 (location: C:\Users\Admin\Bunny Pick\Library\PackageCache\com.unity.rendering.light-transport)
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+[Subsystems] No new subsystems found in resolved package list.
+Package Manager log level set to [2]
+[Package Manager] Done registering packages in 0.18 seconds
+Refreshing native plugins compatible for Editor in 210.86 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.25f1 (4859ab7b5a49)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Admin/Bunny Pick/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Shader Hidden/ProbeVolume/VoxelizeScene is not supported: GPU does not support conservative rasterization
+[Licensing::Client] Successfully resolved entitlement details
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+[Licensing::Client] Successfully resolved entitlement details
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.25f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.333697 seconds.
+- Loaded All Assemblies, in  5.728 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 219 ms
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.501 seconds
+Domain Reload Profiling: 6227ms
+	BeginReloadAssembly (4361ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (118ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (368ms)
+	LoadAllAssembliesAndSetupDomain (872ms)
+		LoadAssemblies (4360ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (870ms)
+			TypeCache.Refresh (869ms)
+				TypeCache.ScanAssembly (799ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (501ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (475ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (289ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (106ms)
+			ProcessInitializeOnLoadMethodAttributes (70ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:80
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Admin\Bunny Pick\
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping application/grpc - - 200 - application/grpc 44.9766ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/Admin/Bunny Pick
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.runtime.interopservices.windowsruntime has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Runtime.InteropServices.WindowsRuntime.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll"
+warn: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Assembly system.componentmodel.composition has duplicate hint path. Ignoring "C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\System.ComponentModel.Composition.dll" in favor of "C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll"
+DisplayProgressbar: Compiling Scripts
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Mono.Cecil, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.nuget.mono-cecil\Mono.Cecil.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 359.8372ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\Tools\netcorerun\netcorerun.exe "C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\Tools\BuildPipeline\ScriptCompilationBuildProgram.exe" "Library/Bee/1900b0aEDbg.dag.json" "Library/Bee/1900b0aEDbg-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/Admin/Bunny Pick
+ExitCode: 4 Duration: 1s218ms
+Rebuilding DAG because FileSignature timestamp changed: Library/Bee/1900b0aEDbg-inputdata.json
+[ 778/1007  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[ 779/1007  1s] Csc Library/Bee/artifacts/1900b0aEDbg.dag/BunnyPick.Runtime.dll (+2 others)
+*** Tundra requires additional run (1.19 seconds), 2 items updated, 777 evaluated
+ExitCode: 0 Duration: 1s198ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\bee_backend.exe --dont-print-to-structured-log --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aEDbg.dag" --continue-on-failure --dagfilejson="Library\Bee\1900b0aEDbg.dag.json" --profile="Library/Bee/backend2.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/Admin/Bunny Pick
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors application/grpc - - 200 - application/grpc 5.7908ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 126 defines and 335 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/BunnyPick.Runtime.dll, with 128 defines and 260 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/BunnyPick.PlayModeTests.dll, with 128 defines and 246 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 15.8320ms
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 26.4580ms
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Collections, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with Library\Bee\artifacts\1900b0aEDbg.dag\Unity.Collections.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null with C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Resolved Unity.Burst.Cecil.Rocks, Version=0.11.4.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e with Library\PackageCache\com.unity.burst\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly application/grpc - - 200 - application/grpc 1292.0744ms
+ExitCode: 0 Duration: 1s704ms
+Finished compiling graph: 1010 nodes, 17870 flattened edges (14644 ToBuild, 162 ToUse), maximum node priority 1134
+[ 781/1007  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[ 998/1007  0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/BunnyPick.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/BunnyPick.Runtime.dll, with 128 defines and 260 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[ 999/1007  0s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/BunnyPick.PlayModeTests.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/BunnyPick.PlayModeTests.dll, with 128 defines and 246 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1000/1007  0s] CopyFiles Library/ScriptAssemblies/BunnyPick.Runtime.pdb
+[1003/1007  0s] CopyFiles Library/ScriptAssemblies/BunnyPick.Runtime.dll
+[1004/1007  1s] ILPostProcess Library/Bee/artifacts/1900b0aEDbg.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aEDbg.dag/Assembly-CSharp-Editor.dll, with 126 defines and 335 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+*** Tundra build success (1.69 seconds), 6 items updated, 1007 evaluated
+AssetDatabase: script compilation time: 4.615291s
+Begin MonoManager ReloadAssembly
+Total cache size 267291069
+Total cache size after purge 267291069, took 00:00:00.2691334
+- Loaded All Assemblies, in  6.440 seconds
+Refreshing native plugins compatible for Editor in 1.40 ms, found 5 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 5 plugins.
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.413 seconds
+Domain Reload Profiling: 10851ms
+	BeginReloadAssembly (855ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (5531ms)
+		LoadAssemblies (5165ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (441ms)
+			TypeCache.Refresh (373ms)
+				TypeCache.ScanAssembly (363ms)
+			BuildScriptInfoCaches (56ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (4413ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4064ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (127ms)
+			ProcessInitializeOnLoadAttributes (3700ms)
+			ProcessInitializeOnLoadMethodAttributes (207ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 1.41 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cba2352fa1b27ae4788eba9f1dacfa60): Total: 17.781 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=6354 ms
+		Asset DB Callback time: managed=179 ms, native=4 ms
+		Scripting: domain reloads=1, domain reload time=6535 ms, compile time=4616 ms, other=91 ms
+		Project Asset Count: scripts=1499, non-scripts=3002
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 1.158ms
+	ApplyChangesToAssetFolders: 0.323ms
+	Scan: 162.911ms
+	OnSourceAssetsModified: 0.701ms
+	CategorizeAssetsWithTransientArtifact: 1074.364ms
+	ProcessAssetsWithTransientArtifactChanges: 61.646ms
+	CategorizeAssets: 35.227ms
+	ImportOutOfDateAssets: 4423.084ms (-195.505ms without children)
+		CompileScripts: 4616.148ms
+		ReloadNativeAssets: 0.015ms
+		UnloadImportedAssets: 1.331ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.647ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.000ms
+		OnDemandSchedulerStart: 0.447ms
+	PostProcessAllAssets: 180.113ms
+	Hotreload: 2.831ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.000ms
+	UnloadStreamsBegin: 0.706ms
+	PersistCurrentRevisions: 0.111ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 1.694ms
+	Untracked: 11837.460ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 5.166ms
+Initializing Unity extensions:
+[Licensing::Client] Successfully resolved entitlement details
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Bunny Pick
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7162 unused Assets / (3.4 MB). Loaded Objects now: 7947.
+Memory consumption went from 217.7 MB to 214.3 MB.
+Total: 14.544400 ms (FindLiveObjects: 0.801900 ms CreateObjectMapping: 0.501800 ms MarkObjects: 10.558000 ms  DeleteObjects: 2.673700 ms)
+
+Asset Pipeline Refresh (id=dee09f93e8a8d284da067c9031f4127b): Total: 0.036 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Start importing Assets/Sprites/Generated/Circle.png using Guid(bcb78ab535e1ac24f8a71184480c46c8) (TextureImporter) -> (artifact id: '4efff0ccdd10f09ea107745688aea6a5') in 0.031414 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6ece68a5de56cd942a81b900715f5e17): Total: 0.056 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Sprites/Generated/Circle.png using Guid(bcb78ab535e1ac24f8a71184480c46c8) (TextureImporter) -> (artifact id: '4efff0ccdd10f09ea107745688aea6a5') in 0.0028621 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=551ec91adf348884a9f1b80062ca00a6): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Sprites/Generated/Ring.png using Guid(142630917ade21341890042f4d47c6f5) (TextureImporter) -> (artifact id: '8e3aef12c4aa472cf8e6b3454b4226d9') in 0.0075858 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3e2fdff2a47c0514a863d03951a00474): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Sprites/Generated/Ring.png using Guid(142630917ade21341890042f4d47c6f5) (TextureImporter) -> (artifact id: '8e3aef12c4aa472cf8e6b3454b4226d9') in 0.0029302 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=61cd4e1e1bb01a04a93e3a78c9354a33): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Sprites/Generated/SkyGradient.png using Guid(dc11976b79597fc48892f1f2bc18c62a) (TextureImporter) -> (artifact id: 'd2f052568fce0d446edd6bd24154086e') in 0.0077648 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f38ad4d0f5c75ba4dae504e734dc01ce): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Sprites/Generated/SkyGradient.png using Guid(dc11976b79597fc48892f1f2bc18c62a) (TextureImporter) -> (artifact id: 'd2f052568fce0d446edd6bd24154086e') in 0.0026896 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7b73c55e51f8050458446fd53a56f426): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bg_garden.png using Guid(db85c20c96558384486f1513e2cf6c0f) (TextureImporter) -> (artifact id: 'b5d7d5a42a697bc71685342bd304935b') in 0.073112 seconds
+Refreshing native plugins compatible for Editor in 1.37 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7771dd1cd9af7654d96e85c772e7e110): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bg_garden.png using Guid(db85c20c96558384486f1513e2cf6c0f) (TextureImporter) -> (artifact id: 'b5d7d5a42a697bc71685342bd304935b') in 0.0660117 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=fd4f22b14db40704fa236b148944c0c7): Total: 0.078 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/hole.png using Guid(eb34f21ee8f8a3f408953872e3906790) (TextureImporter) -> (artifact id: '99f37a9e3ef94a85ca05cf302e75b564') in 0.0092311 seconds
+Refreshing native plugins compatible for Editor in 1.48 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=c7c8a8cb40c65644bb6e0c9911072ed2): Total: 0.021 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/hole.png using Guid(eb34f21ee8f8a3f408953872e3906790) (TextureImporter) -> (artifact id: '99f37a9e3ef94a85ca05cf302e75b564') in 0.0046637 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=624db057ffb333244b0eed98ac0c7efd): Total: 0.017 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/teddy_bear.png using Guid(24fdcebaa6615734e94463db77113b9e) (TextureImporter) -> (artifact id: '80ca244e81e6e2d4e54d10a4a77fe1b9') in 0.0138361 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ed04681c6d289864ba27b17253977318): Total: 0.025 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/teddy_bear.png using Guid(24fdcebaa6615734e94463db77113b9e) (TextureImporter) -> (artifact id: '80ca244e81e6e2d4e54d10a4a77fe1b9') in 0.0058084 seconds
+Refreshing native plugins compatible for Editor in 1.44 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=984265665e7d36d45a5f7b10bc952c08): Total: 0.018 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/carrot.png using Guid(98155131310edbf4885bceca670719f7) (TextureImporter) -> (artifact id: '695aa4ab32b5eb811e95575eef3f9902') in 0.0117667 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=bd654cf6d45eff748be945248172c194): Total: 0.023 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/carrot.png using Guid(98155131310edbf4885bceca670719f7) (TextureImporter) -> (artifact id: '695aa4ab32b5eb811e95575eef3f9902') in 0.0035363 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5f7c8b6e9d6df8e4ea4b8425ba9bc30e): Total: 0.016 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_heart_full.png using Guid(3a2e947a1fd510e408dc3d8b4a2ccc29) (TextureImporter) -> (artifact id: '22b5e7d1122daec975f19a3b61a6b3f1') in 0.0104111 seconds
+Refreshing native plugins compatible for Editor in 2.01 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=760275390ec594643ad957b6b1ffe8f9): Total: 0.023 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_heart_full.png using Guid(3a2e947a1fd510e408dc3d8b4a2ccc29) (TextureImporter) -> (artifact id: '22b5e7d1122daec975f19a3b61a6b3f1') in 0.0026497 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a1539cca8aba077488f44e8c066e1ea9): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_heart_empty.png using Guid(9a69b339d7dfbad40a67f8b357285736) (TextureImporter) -> (artifact id: 'd2bf8db3d7b1757f2cafbc7391271c85') in 0.0111713 seconds
+Refreshing native plugins compatible for Editor in 1.37 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=55e5db0a3a8dccd479c16b02ea77c608): Total: 0.024 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_heart_empty.png using Guid(9a69b339d7dfbad40a67f8b357285736) (TextureImporter) -> (artifact id: 'd2bf8db3d7b1757f2cafbc7391271c85') in 0.0033196 seconds
+Refreshing native plugins compatible for Editor in 1.30 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=becc15a3eaca4584ca9c5782cfc7edd6): Total: 0.016 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_settings.png using Guid(53185f41d46f7dd4ebb47a1151c43cbb) (TextureImporter) -> (artifact id: 'cfadc54a740f31b90eda4839aa9f68df') in 0.0135744 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6a09a6c4cb1415d44ae0346af4ba6555): Total: 0.026 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_settings.png using Guid(53185f41d46f7dd4ebb47a1151c43cbb) (TextureImporter) -> (artifact id: 'cfadc54a740f31b90eda4839aa9f68df') in 0.0029353 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1ae17a94eca0fa240960d979cc916dba): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_info.png using Guid(9e94ddb319f43854d990ba88fadebb7b) (TextureImporter) -> (artifact id: '89dfdb2625f9543d5618d9453362163f') in 0.0105216 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=faef13e817605b247a937fe560afaa3b): Total: 0.022 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_info.png using Guid(9e94ddb319f43854d990ba88fadebb7b) (TextureImporter) -> (artifact id: '89dfdb2625f9543d5618d9453362163f') in 0.0027035 seconds
+Refreshing native plugins compatible for Editor in 1.30 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=235b4ed25e98b1c4190de6115a681840): Total: 0.014 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_exit.png using Guid(8d3b2d9c5e82677448f36f9658a9106f) (TextureImporter) -> (artifact id: 'd9a2ec67bcbea44b4f02db92b9802bc6') in 0.0100296 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=114a72c6bfe916742b3a17ba6250a5e8): Total: 0.023 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_exit.png using Guid(8d3b2d9c5e82677448f36f9658a9106f) (TextureImporter) -> (artifact id: 'd9a2ec67bcbea44b4f02db92b9802bc6') in 0.0037256 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=1317f219ad1c2be49a2e852fb71775c3): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_sound_on.png using Guid(327489d1c60111d4f865cfdf3d4974b7) (TextureImporter) -> (artifact id: '6b604822a1c27e4a6596e64d4a3a9d6c') in 0.0108466 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f713395043e4d3741a61d0d19df8ff4f): Total: 0.022 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_sound_on.png using Guid(327489d1c60111d4f865cfdf3d4974b7) (TextureImporter) -> (artifact id: '6b604822a1c27e4a6596e64d4a3a9d6c') in 0.0029149 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=cf0aead0ef42f8d45aa3f8af90651853): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_sound_off.png using Guid(f4584bf7cef3cce47b34ef008ddfdaed) (TextureImporter) -> (artifact id: '91e5405d8ed35e7ea6ad47ea09458dca') in 0.0106891 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=57f079c9616aa1d43979f7ec8a539097): Total: 0.024 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/icon_sound_off.png using Guid(f4584bf7cef3cce47b34ef008ddfdaed) (TextureImporter) -> (artifact id: '91e5405d8ed35e7ea6ad47ea09458dca') in 0.0035194 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6bd998be324e20e42864e0e3e15a746e): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/prefix_bubble.png using Guid(7ab36a003c727c24c998270eb68a1278) (TextureImporter) -> (artifact id: '67fff69b2dd8b52158779b397862760b') in 0.0090226 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=00e21eb57e4070742aded6458ef1f53d): Total: 0.020 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/prefix_bubble.png using Guid(7ab36a003c727c24c998270eb68a1278) (TextureImporter) -> (artifact id: '67fff69b2dd8b52158779b397862760b') in 0.0039201 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=3001b9a312c2a1447876cfb0decf4348): Total: 0.016 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_extralife.png using Guid(68d3c9ed2b8bbab4d92497695a8c9fb5) (TextureImporter) -> (artifact id: 'db7439be2776f07cae0a323f5dce4d2c') in 0.0077647 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=81ea14d80ffc05d46aaa5d595a56c745): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_extralife.png using Guid(68d3c9ed2b8bbab4d92497695a8c9fb5) (TextureImporter) -> (artifact id: 'db7439be2776f07cae0a323f5dce4d2c') in 0.0028016 seconds
+Refreshing native plugins compatible for Editor in 1.51 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f6780eed78d611542aa7e419efb51c0f): Total: 0.014 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_slowtime.png using Guid(d71b7ccf1bfabe748810d665afb79c4f) (TextureImporter) -> (artifact id: '5875135b1b36f78d586f69dd30436f52') in 0.007633 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d693ff06af4ef2241932a768597c3adc): Total: 0.020 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_slowtime.png using Guid(d71b7ccf1bfabe748810d665afb79c4f) (TextureImporter) -> (artifact id: '5875135b1b36f78d586f69dd30436f52') in 0.0033617 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=deeb8719f1395fb489dcb284b4a405bd): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_reveal.png using Guid(37adcf0098ff3b148ad7629d1e763aae) (TextureImporter) -> (artifact id: '7c6698b02f20df243d7ebe4f9b63d115') in 0.0084214 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ca43ad94d6c544740a97220521ed31e7): Total: 0.020 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_reveal.png using Guid(37adcf0098ff3b148ad7629d1e763aae) (TextureImporter) -> (artifact id: '7c6698b02f20df243d7ebe4f9b63d115') in 0.0028884 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7985956b1f943bf48b469d2083dc1a8e): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_freeze.png using Guid(ad6a00af7ac1a344f88739e1c135f08b) (TextureImporter) -> (artifact id: 'b545cac5f879f81b3ed4a4e2c8c8f4cc') in 0.0076548 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=42f7c77a23768f04b97c17aa9679d78a): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/badge_freeze.png using Guid(ad6a00af7ac1a344f88739e1c135f08b) (TextureImporter) -> (artifact id: 'b545cac5f879f81b3ed4a4e2c8c8f4cc') in 0.0031409 seconds
+Refreshing native plugins compatible for Editor in 1.87 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4e480406a599d4c4ab2fa3cd78d9fb13): Total: 0.015 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/glove_open.png using Guid(d71eec301c535934ca4b57517e3978cc) (TextureImporter) -> (artifact id: '57d6d9633daf4badb801586955358591') in 0.0114534 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=5645b4422147f5440a6ac1b86332a2cf): Total: 0.023 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/glove_open.png using Guid(d71eec301c535934ca4b57517e3978cc) (TextureImporter) -> (artifact id: '57d6d9633daf4badb801586955358591') in 0.0042464 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4ed474c3065b750459b4e9eaeb6d7736): Total: 0.016 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/glove_closed.png using Guid(e2c4c05891c80cf44a86575dbf53a9fd) (TextureImporter) -> (artifact id: '045ff459492f6e0cd2b15d85e36b9e41') in 0.0109785 seconds
+Refreshing native plugins compatible for Editor in 1.92 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=b14bb720967e88a4e8ffe847ce0d0e2b): Total: 0.023 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/glove_closed.png using Guid(e2c4c05891c80cf44a86575dbf53a9fd) (TextureImporter) -> (artifact id: '045ff459492f6e0cd2b15d85e36b9e41') in 0.003688 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=600008cade5ab234e8e2db2bd93308b2): Total: 0.016 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_catch_correct.wav using Guid(ce89e45652721774d97c9e38038bc6d2) (AudioImporter) -> (artifact id: '2b3ebcde27cdfe394484bc7efaffa03e') in 0.0813306 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=528271d78210db0479ab3ed64afcb14c): Total: 0.093 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_wrong_tap.wav using Guid(cf65d191d04c65145bd3413feca29312) (AudioImporter) -> (artifact id: '51d762828bbb8fddfb339de612e7e10b') in 0.0483157 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6aab385d8b95e454a8b2e2c96c447f01): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_life_lost.wav using Guid(e4c2d789b3cde3942bacedbbc0a9b1e0) (AudioImporter) -> (artifact id: '4db1296048878a75f9a059de8d6a873b') in 0.0468879 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a61b2bcae666d4f4496594945f1f2275): Total: 0.059 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_powerup_pickup.wav using Guid(efabb8367780487488b0d0aef0b9c582) (AudioImporter) -> (artifact id: '89fa497a6e226b0f33b5fb5d78771dc4') in 0.0417194 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=aaa644bfa239f1442a117a56cd107370): Total: 0.054 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_run_complete.wav using Guid(96514191847b27e4b9b31ec6ee928afa) (AudioImporter) -> (artifact id: '478286827ba2c354493e04649b4dcf64') in 0.0475635 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=ee59118e3b99c5c479374f4025f985e1): Total: 0.059 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_gameover.wav using Guid(f6d75629ee6413f46b3609763d534170) (AudioImporter) -> (artifact id: '4c42a0931cd56037bd315507a9e7ec4a') in 0.0480493 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4f3ee600fa29c89439692345d0583ff2): Total: 0.060 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_digit_tick.wav using Guid(9b452df6f39362644a3583560e93d556) (AudioImporter) -> (artifact id: 'a1c9bc902b413cf6a5f74118d4cec8a5') in 0.0404587 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=62053e61073906f4b82632d7ccbf6851): Total: 0.052 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedAudio/sfx_button_click.wav using Guid(6635dde9da421ca48ab7108cf14be436) (AudioImporter) -> (artifact id: 'fd031401600c5a3007cfccb594fdbbbb') in 0.0434934 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f894292396ec02d41b0b3a83d434e9e1): Total: 0.055 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_white.png using Guid(e011f441a1568474c91922facf3e8ac7) (TextureImporter) -> (artifact id: '2c4081a6a7dedfe9beb69145ce8e7e4a') in 0.0174248 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=694615d79a0ea3d47a6e5a5757450fab): Total: 0.029 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_white.png using Guid(e011f441a1568474c91922facf3e8ac7) (TextureImporter) -> (artifact id: '2c4081a6a7dedfe9beb69145ce8e7e4a') in 0.0068506 seconds
+Refreshing native plugins compatible for Editor in 1.33 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=f94ee27e04b614a4b9361dc67dd7c8be): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_pink.png using Guid(242eac74be705ed45b76184f7a3e797a) (TextureImporter) -> (artifact id: '2bde74c07b7554ca0a8793f638b3eca9') in 0.0111456 seconds
+Refreshing native plugins compatible for Editor in 1.36 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a0727e20ed31110478e791230a4754f4): Total: 0.024 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_pink.png using Guid(242eac74be705ed45b76184f7a3e797a) (TextureImporter) -> (artifact id: '2bde74c07b7554ca0a8793f638b3eca9') in 0.0067408 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=7bf4d75915cf0f24aab1152b306c0471): Total: 0.018 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_skyblue.png using Guid(b4201d4c4c4e2314a86fe1bb2d669cbf) (TextureImporter) -> (artifact id: 'd481eb147067f12699432414e5804bda') in 0.0145687 seconds
+Refreshing native plugins compatible for Editor in 1.98 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=aec79ce37c158ae4595159798252b9ce): Total: 0.027 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_skyblue.png using Guid(b4201d4c4c4e2314a86fe1bb2d669cbf) (TextureImporter) -> (artifact id: 'd481eb147067f12699432414e5804bda') in 0.007442 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=6013bcf9bb8e7b54ca9ece236e4f9ba5): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_lemon.png using Guid(99d7cea082343804aa7f19e9c9f69a39) (TextureImporter) -> (artifact id: 'c66d40fe301772e1d6ad297baf54b8de') in 0.0149705 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=365b0efdc3e687b4fae7c86cff3a4306): Total: 0.027 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_lemon.png using Guid(99d7cea082343804aa7f19e9c9f69a39) (TextureImporter) -> (artifact id: 'c66d40fe301772e1d6ad297baf54b8de') in 0.0073633 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=90b21f6a003764942b1ee54c28d8c4e4): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_lavender.png using Guid(77879160509ef96428855f644b877eae) (TextureImporter) -> (artifact id: 'b127e8e46d1c97aff7785871f07e0bc6') in 0.0146967 seconds
+Refreshing native plugins compatible for Editor in 1.52 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=0ccc119b91c9e6e459fdbbc17b65453f): Total: 0.026 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_lavender.png using Guid(77879160509ef96428855f644b877eae) (TextureImporter) -> (artifact id: 'b127e8e46d1c97aff7785871f07e0bc6') in 0.0071332 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=a5ade326532d35145be7c09ec1a82f70): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_mint.png using Guid(bca7281a232846142a752fb0ce8c75f1) (TextureImporter) -> (artifact id: '590e992c396bbfca5d14a6f4e0b2ba58') in 0.0146087 seconds
+Refreshing native plugins compatible for Editor in 1.82 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=d6705850517f15b4c9eb2d7528f4a1ca): Total: 0.026 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/ImportedArt/bunny_mint.png using Guid(bca7281a232846142a752fb0ce8c75f1) (TextureImporter) -> (artifact id: '590e992c396bbfca5d14a6f4e0b2ba58') in 0.0078595 seconds
+Refreshing native plugins compatible for Editor in 1.35 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=4cbe97f1530e9df4988b10824e2e18af): Total: 0.019 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 106 unused Assets / (53.7 KB). Loaded Objects now: 7956.
+Memory consumption went from 200.4 MB to 200.3 MB.
+Total: 6.265300 ms (FindLiveObjects: 0.249600 ms CreateObjectMapping: 0.193300 ms MarkObjects: 5.689400 ms  DeleteObjects: 0.131900 ms)
+
+Start importing Assets/Scenes/BunnyPick.unity using Guid(86640670a276770478c5a0c09e04b712) (DefaultImporter) -> (artifact id: '60087900be41c7b24f1c6741069fbb88') in 0.0050524 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Asset Pipeline Refresh (id=71cb85ce2599c2a41914b7254fedca60): Total: 0.032 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Asset Pipeline Refresh (id=3507e30dc89bf7343b6a96ea244da7e6): Total: 0.006 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Bunny Pick scene built at Assets/Scenes/BunnyPick.unity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+BunnyPick.EditorTools.BunnyPickSceneBuilder:BuildScene () (at Assets/Editor/BunnyPickSceneBuilder.cs:89)
+
+(Filename: Assets/Editor/BunnyPickSceneBuilder.cs Line: 89)
+
+Batchmode quit successfully invoked - shutting down!
+Killing ADB server in 0.036333 seconds.
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+[Licensing::IpcConnector] License Notification channel disconnected successfully.
+[Licensing::IpcConnector] License Client channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+abort_threads: Failed aborting id: 0000000000005430, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000000B4C, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000005430, mono_thread_manage will ignore it
+
+abort_threads: Failed aborting id: 0000000000000B4C, mono_thread_manage will ignore it
+
+debugger-agent: Unable to listen on 3108
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0
