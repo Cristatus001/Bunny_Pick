@@ -35,19 +35,23 @@ namespace BunnyPick.Data
         // ImportRealArt) already has 8 dirt holes hand-painted into the hillside; these are THAT
         // art's own holes converted to world space (worldX = (pixelX-1060)/119, worldY =
         // (640-pixelY)/119), not an abstract design grid, so bunnies pop up exactly where the
-        // background already shows a hole. Source pixel positions, for re-measuring if the art
-        // ever changes: (314,1122) (1887,1138) (1926,785) (676,1196) (1469,1072) (1021,1026)
-        // (1523,857) (535,1006).
+        // background already shows a hole. The previous measurement was off by up to ~0.6 world
+        // units on 4 of the 8 holes (visually confirmed by cropping the real art around each
+        // point - some landed in the grass/foliage beside a hole rather than inside it, which is
+        // why bunnies were popping up standing outside their hole). Re-measured directly against
+        // the art with a crosshair overlay. Source pixel positions, for re-measuring again if the
+        // art ever changes: (322,1045) (1814,1173) (1924,782) (674,1187) (1411,1088) (1062,1006)
+        // (1518,850) (510,1007).
         public static readonly Vector2[] HolePositions =
         {
-            new Vector2(-6.270f, -4.046f),
-            new Vector2(6.945f, -4.187f),
-            new Vector2(7.280f, -1.218f),
-            new Vector2(-3.227f, -4.674f),
-            new Vector2(3.433f, -3.632f),
-            new Vector2(-0.329f, -3.247f),
-            new Vector2(3.890f, -1.821f),
-            new Vector2(-4.408f, -3.074f),
+            new Vector2(-6.202f, -3.403f),
+            new Vector2(6.336f, -4.479f),
+            new Vector2(7.261f, -1.193f),
+            new Vector2(-3.244f, -4.597f),
+            new Vector2(2.950f, -3.765f),
+            new Vector2(0.017f, -3.076f),
+            new Vector2(3.849f, -1.765f),
+            new Vector2(-4.622f, -3.084f),
         };
 
         // Bunny sprites stand ~2.4 world units tall from their near-ground pivot, so a single

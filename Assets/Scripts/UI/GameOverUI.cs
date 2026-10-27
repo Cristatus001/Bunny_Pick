@@ -11,7 +11,6 @@ namespace BunnyPick.UI
         public Image bannerImage;
         public Sprite winBanner;
         public Sprite loseBanner;
-        public Text titleText;
         public Text starsText;
         public Text detailText;
         public Text factText;
@@ -60,7 +59,6 @@ namespace BunnyPick.UI
         void HandleRunEnded(bool won, int progress, int lives)
         {
             if (bannerImage != null) bannerImage.sprite = won ? winBanner : loseBanner;
-            if (titleText != null) titleText.text = won ? "Run Complete!" : "Run Over";
             if (starsText != null)
             {
                 int stars = ComputeStars(won, progress, lives);

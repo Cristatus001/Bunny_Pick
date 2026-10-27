@@ -515,8 +515,13 @@ namespace BunnyPick.EditorTools
             // menu_bg.png splash), expressed against the Canvas's 1280x720 reference resolution.
             var playButton = CreateImageButton("PlayButton", panelGo.transform, art.PlayButton, new Vector2(31, -148), new Vector2(110, 156));
 
-            CreateText("Subtitle", panelGo.transform, "Learn IUPAC number prefixes the fun way!", 20, TextDarkColor, new Vector2(0, 330), new Vector2(900, 40));
+            var subtitleText = CreateText("Subtitle", panelGo.transform, "Learn IUPAC number prefixes the fun way!", 20, TextDarkColor, new Vector2(0, 330), new Vector2(900, 40));
             var statsText = CreateText("Stats", panelGo.transform, "No runs yet - tap Play to start!", 16, TextDarkColor, new Vector2(0, 300), new Vector2(900, 30));
+            // menu_bg.png's own art already carries the title/branding, so these duplicated the
+            // same information over it - disabled rather than deleted so they're still wired up
+            // (statsText keeps tracking the player's best run) if re-enabled later.
+            subtitleText.gameObject.SetActive(false);
+            statsText.gameObject.SetActive(false);
 
             var canvasGroup = panelGo.AddComponent<CanvasGroup>();
             var ui = panelGo.AddComponent<MainMenuUI>();
@@ -659,10 +664,14 @@ namespace BunnyPick.EditorTools
             panelImg.sprite = art.CongratsBanner;
             panelImg.preserveAspect = true;
 
-            var titleText = CreateText("Title", panelGo.transform, "Run Complete!", 34, TitleColor, new Vector2(0, 43), new Vector2(345, 58), FontStyle.Bold);
-            var starsText = CreateText("Stars", panelGo.transform, "", 25, GoldColor, new Vector2(0, -13), new Vector2(345, 41), FontStyle.Bold);
-            var detailText = CreateText("Detail", panelGo.transform, "", 18, TextDarkColor, new Vector2(0, -75), new Vector2(345, 92));
-            var factText = CreateText("Fact", panelGo.transform, "", 15, TextDarkColor, new Vector2(0, -144), new Vector2(345, 69));
+            // congrats_banner.png / run_over_banner.png already bake "CONGRATS!!" / "RUN OVER"
+            // into their header ribbon art, so a separate "Run Complete!" / "Run Over" text here
+            // just duplicated it - removed, and Detail/Stars/Fact reflowed upward (15px gaps) to
+            // fill the space that freed up, still clear of the baked header above (y<=72, this
+            // panel's old title-text boundary) and the Retry/Home buttons below (y>=-198).
+            var detailText = CreateText("Detail", panelGo.transform, "", 18, TextDarkColor, new Vector2(0, 32), new Vector2(345, 80));
+            var starsText = CreateText("Stars", panelGo.transform, "", 25, GoldColor, new Vector2(0, -43), new Vector2(345, 40), FontStyle.Bold);
+            var factText = CreateText("Fact", panelGo.transform, "", 15, TextDarkColor, new Vector2(0, -128), new Vector2(345, 100));
             var retryButton = CreateImageButton("RetryButton", panelGo.transform, art.RetrySprite, new Vector2(-79, -248), new Vector2(149, 100));
             var homeButton = CreateImageButton("HomeButton", panelGo.transform, art.HomeSprite, new Vector2(76, -248), new Vector2(149, 100));
 
@@ -676,7 +685,6 @@ namespace BunnyPick.EditorTools
             ui.bannerImage = panelImg;
             ui.winBanner = art.CongratsBanner;
             ui.loseBanner = art.RunOverBanner;
-            ui.titleText = titleText;
             ui.starsText = starsText;
             ui.detailText = detailText;
             ui.factText = factText;
@@ -699,11 +707,15 @@ namespace BunnyPick.EditorTools
             var pillRt = AddRect(pillGo, panelGo.transform);
             pillRt.sizeDelta = new Vector2(330, 102);
             pillRt.anchorMin = pillRt.anchorMax = new Vector2(0.5f, 0.5f);
-            pillRt.anchoredPosition = new Vector2(0, 185);
+            // At 185 the pill's bottom edge (134) overlapped the fact card's top edge (149) by
+            // 15px - moved up to 215 (bottom edge 164) for a clean gap above the card.
+            pillRt.anchoredPosition = new Vector2(0, 215);
             var pillImg = pillGo.AddComponent<Image>();
             pillImg.sprite = art.PillLarge;
             pillImg.preserveAspect = true;
-            CreateText("Title", pillGo.transform, "Digging holes...", 24, TextDarkColor, Vector2.zero, new Vector2(300, 80), FontStyle.Bold);
+            // pill_large.png tapers to rounded points at its left/right ends - 280 (not the full
+            // 300 the pill's own RectTransform allows) keeps "Digging holes..." clear of that taper.
+            CreateText("Title", pillGo.transform, "Digging holes...", 24, TextDarkColor, Vector2.zero, new Vector2(280, 70), FontStyle.Bold);
 
             var cardGo = new GameObject("Card", typeof(RectTransform));
             var cardRt = AddRect(cardGo, panelGo.transform);
@@ -713,7 +725,10 @@ namespace BunnyPick.EditorTools
             var cardImg = cardGo.AddComponent<Image>();
             cardImg.sprite = art.LoadingCard;
             cardImg.preserveAspect = true;
-            var factText = CreateText("Fact", cardGo.transform, "", 16, TextDarkColor, Vector2.zero, new Vector2(300, 300));
+            // loading_card.png has a decorative painted border framing its flat "page" area -
+            // the page itself only reads as ~75% of the card's full width, so 260 (not 300) keeps
+            // the fact text off that border on both sides.
+            var factText = CreateText("Fact", cardGo.transform, "", 16, TextDarkColor, Vector2.zero, new Vector2(260, 300));
 
             var canvasGroup = panelGo.AddComponent<CanvasGroup>();
             canvasGroup.alpha = 0f;
@@ -872,7 +887,10 @@ namespace BunnyPick.EditorTools
             cardImg.type = Image.Type.Sliced;
             cardImg.color = PanelColor;
 
-            var closeXButton = CreateButton("CloseX", cardGo.transform, uiSprite, "X", new Vector2(320, 250), new Vector2(48, 48), new Color32(0xAF, 0xAF, 0xAF, 0xFF));
+            // A real X-mark glyph (generated, like Circle/Ring below) instead of the generic grey
+            // button-with-a-"X"-label that was here before - reads clearly as a close control at
+            // a glance instead of looking like an unstyled placeholder.
+            var closeXButton = CreateImageButton("CloseX", cardGo.transform, GetOrCreateCloseXSprite(), new Vector2(320, 250), new Vector2(40, 40));
 
             CreateText("Title", cardGo.transform, "How to Play", 30, TitleColor, new Vector2(0, 235), new Vector2(600, 45), FontStyle.Bold);
             string howTo =
@@ -903,7 +921,10 @@ namespace BunnyPick.EditorTools
             var panelRt = AddRect(panelGo, rootGo.transform);
             panelRt.sizeDelta = new Vector2(300, 160);
             panelRt.anchorMin = panelRt.anchorMax = new Vector2(1f, 1f);
-            panelRt.anchoredPosition = new Vector2(-190, -140);
+            // The gear button that opens this popover sits at the same top-right corner
+            // (anchoredPos (-40,-40), size 64) - at -140 the card's top edge overlapped the
+            // button's bottom edge by ~12px. -172 clears it with a clean margin.
+            panelRt.anchoredPosition = new Vector2(-190, -172);
             var panelImg = panelGo.AddComponent<Image>();
             panelImg.sprite = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Background.psd");
             panelImg.type = Image.Type.Sliced;
@@ -1022,6 +1043,40 @@ namespace BunnyPick.EditorTools
                         float alphaOuter = Mathf.Clamp01((outerR - dist) + 1.5f);
                         float alphaInner = Mathf.Clamp01((dist - innerR) + 1.5f);
                         tex.SetPixel(x, y, new Color(1, 1, 1, Mathf.Min(alphaOuter, alphaInner)));
+                    }
+                }
+                tex.Apply();
+                WritePng(tex, path);
+            }
+            return ImportGeneratedSprite(path, 128);
+        }
+
+        static Sprite GetOrCreateCloseXSprite()
+        {
+            string path = $"{SpriteDir}/CloseX.png";
+            if (!File.Exists(ToAbsolute(path)))
+            {
+                const int size = 128;
+                const float pad = 26f;
+                const float thickness = 14f;
+                const float sqrt2 = 1.41421356f;
+                float extent = size - pad * 2f;
+                var tex = new Texture2D(size, size, TextureFormat.RGBA32, false);
+                for (int y = 0; y < size; y++)
+                {
+                    for (int x = 0; x < size; x++)
+                    {
+                        float fx = x + 0.5f - pad;
+                        float fy = y + 0.5f - pad;
+                        float alpha = 0f;
+                        if (fx >= -thickness && fx <= extent + thickness && fy >= -thickness && fy <= extent + thickness)
+                        {
+                            float d1 = Mathf.Abs(fx - fy) / sqrt2;
+                            float d2 = Mathf.Abs(fx - (extent - fy)) / sqrt2;
+                            float d = Mathf.Min(d1, d2);
+                            alpha = Mathf.Clamp01((thickness * 0.5f - d) + 1f);
+                        }
+                        tex.SetPixel(x, y, new Color(0.29f, 0.235f, 0.18f, alpha));
                     }
                 }
                 tex.Apply();
