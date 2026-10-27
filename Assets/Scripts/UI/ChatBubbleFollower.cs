@@ -19,7 +19,11 @@ namespace BunnyPick.UI
         public Image bodyImage;
         public Text text;
         public Camera worldCamera;
-        public Vector3 worldOffset = new Vector3(0.44f, 1.6f, 0f);
+        // bunny_character.png's pivot sits almost exactly at its feet (see BunnyPickSceneBuilder.
+        // ImportRealArt), so unlike the teddy/badge pairing, this can't be a proportional
+        // scale-down of the old offset - it has to clear the bunny's own full height above its
+        // pivot (2.4 world units tall) plus its tall ears, with a bit of headroom on top.
+        public Vector3 worldOffset = new Vector3(0.28f, 2.55f, 0f);
 
         void LateUpdate()
         {

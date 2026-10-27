@@ -6,9 +6,9 @@ namespace BunnyPick.UI
 {
     /// <summary>
     /// Small settings popover anchored to the corner icon: a music on/off toggle and an exit
-    /// row. Opening it pauses the run (Time.timeScale = 0) without covering the screen.
-    /// Exiting mid-run routes through the confirm-exit dialog; on the title screen it's a
-    /// no-op, matching the reference.
+    /// row. Opening it pauses the run (Time.timeScale = 0). Exit always routes through the
+    /// shared confirm-exit dialog, which decides for itself (from GameManager.State) whether
+    /// confirming should return to the Main Menu or quit the app.
     /// </summary>
     public class SettingsPanelUI : MonoBehaviour
     {
@@ -55,12 +55,8 @@ namespace BunnyPick.UI
         void OnExitClicked()
         {
             GameManager.Instance?.PlayButtonClick();
-            if (GameManager.Instance != null && GameManager.Instance.State == GameState.Playing)
-            {
-                Hide();
-                confirmExit?.Show();
-            }
-            // Title screen: exit intentionally does nothing (matches the reference).
+            Hide();
+            confirmExit?.Show();
         }
 
         public void Toggle()

@@ -20,9 +20,11 @@ namespace BunnyPick.Gameplay
         }
 
         // How far a bunny/teddy sinks below its resting position while hidden in its hole.
-        // Larger than the reference's own 100px so the motion reads clearly in world space
-        // (the reference leans on canvas compositing quirks that don't carry over 1:1).
-        public static readonly float PopRiseWorldUnits = 150f * GameData.PxToWorld;
+        // Scaled down (x0.568, matching bunny_character.png's own scale-down in
+        // BunnyPickSceneBuilder) from the original 150px so a bunny still sinks by roughly the
+        // same fraction of its own height as before, now that both it and gameplay_bg.png's
+        // painted holes are noticeably smaller than the old art.
+        public static readonly float PopRiseWorldUnits = 85f * GameData.PxToWorld;
 
         // How small a bunny/teddy shrinks while tucked down in its hole. The reference only
         // varies scale between ~0.72 and 1.0, which barely reads as a size change in-world;
@@ -45,8 +47,8 @@ namespace BunnyPick.Gameplay
         // How far above a bunny's resting spot the grabbing hand starts its swoop, and how far
         // it carries the bunny upward afterwards - both in world units, matching the scale of
         // PopRiseWorldUnits above.
-        const float HandApproachOffset = 480f * GameData.PxToWorld;
-        const float HandLiftDistance = 220f * GameData.PxToWorld;
+        const float HandApproachOffset = 328f * GameData.PxToWorld;
+        const float HandLiftDistance = 150f * GameData.PxToWorld;
 
         // Fraction of FadeDuration spent swooping down to the bunny before the hand closes and
         // lifts it away, and the fraction at which the carried pair starts fading out.
@@ -147,7 +149,7 @@ namespace BunnyPick.Gameplay
             float t = Mathf.Clamp01(collectAge / GameData.CollectDuration);
             return new Sample
             {
-                offsetY = -t * 50f * GameData.PxToWorld,
+                offsetY = -t * 28f * GameData.PxToWorld,
                 scale = 1f + t * 0.5f,
                 alpha = Mathf.Max(0f, 1f - t),
             };

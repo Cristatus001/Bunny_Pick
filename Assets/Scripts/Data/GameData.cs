@@ -5,9 +5,8 @@ namespace BunnyPick.Data
 {
     /// <summary>
     /// Static game constants ported directly from the reference HTML prototype's js/data.js,
-    /// so the Unity build matches its rules exactly. Hole positions were authored in the
-    /// prototype's 1920x1080 canvas space and are converted here to this project's world units
-    /// (10 units tall, matching the Main Camera's orthographic size of 5) via CanvasToWorld.
+    /// so the Unity build matches its rules exactly (gameplay rules only - hole positions below
+    /// are this project's own, measured from its real background art rather than the prototype).
     /// </summary>
     public static class GameData
     {
@@ -32,29 +31,60 @@ namespace BunnyPick.Data
         const float WorldHeight = 10f;
         public const float PxToWorld = WorldHeight / CanvasHeight;
 
-        static Vector2 CanvasToWorld(float x, float y) =>
-            new Vector2((x - 1920f / 2f) * PxToWorld, (1080f / 2f - y) * PxToWorld);
-
-        // Two staggered rows sitting entirely in the open grass below the fence, replacing the
-        // prototype's original scattered layout - that one tucked a hole up under the garden
-        // tree's canopy in bg_garden.png. Every pair here is >=350px apart (2x HoleHitRadius is
-        // 330px) so tap targets never overlap, the rightmost column stays left of the tree's
-        // trunk (canvas x ~1740-1810), and the bottom row's y is capped well short of 981 -
-        // the highest a hole can sit before its own art starts clipping below the Main
-        // Camera's orthographic view (size 5, i.e. canvas y 1080 maps to the bottom edge).
+        // gameplay_bg.png (2120x1280, imported at 119 px/world-unit - see BunnyPickSceneBuilder.
+        // ImportRealArt) already has 8 dirt holes hand-painted into the hillside; these are THAT
+        // art's own holes converted to world space (worldX = (pixelX-1060)/119, worldY =
+        // (640-pixelY)/119), not an abstract design grid, so bunnies pop up exactly where the
+        // background already shows a hole. Source pixel positions, for re-measuring if the art
+        // ever changes: (314,1122) (1887,1138) (1926,785) (676,1196) (1469,1072) (1021,1026)
+        // (1523,857) (535,1006).
         public static readonly Vector2[] HolePositions =
         {
-            CanvasToWorld(300, 580),
-            CanvasToWorld(700, 580),
-            CanvasToWorld(1050, 580),
-            CanvasToWorld(1400, 580),
-            CanvasToWorld(460, 940),
-            CanvasToWorld(820, 940),
-            CanvasToWorld(1180, 940),
-            CanvasToWorld(1540, 940),
+            new Vector2(-6.270f, -4.046f),
+            new Vector2(6.945f, -4.187f),
+            new Vector2(7.280f, -1.218f),
+            new Vector2(-3.227f, -4.674f),
+            new Vector2(3.433f, -3.632f),
+            new Vector2(-0.329f, -3.247f),
+            new Vector2(3.890f, -1.821f),
+            new Vector2(-4.408f, -3.074f),
         };
 
-        public static readonly float HoleHitRadius = 165f * PxToWorld;
+        // Bunny sprites stand ~2.4 world units tall from their near-ground pivot, so a single
+        // small radius centered at ground level only ever covered their feet - taps on the face
+        // or ears (where players actually tap) missed. Each hole gets its own radius instead,
+        // capped by HALF its distance to its single nearest neighbour (with a safety margin) so
+        // tap zones can never overlap, no matter which pair of holes ends up closest; isolated
+        // holes (far from every other hole) get a much more forgiving zone than tightly-clustered
+        // ones. Provably safe for every pair (i, j): radius_i <= d(i,j)/2*factor and
+        // radius_j <= d(i,j)/2*factor (each hole's own nearest-neighbour distance is <= d(i,j) by
+        // definition), so radius_i + radius_j <= d(i,j)*factor <= d(i,j).
+        const float HoleHitRadiusSafetyFactor = 0.92f;
+        const float HoleHitRadiusMax = 1.1f;
+        public static readonly float[] HoleHitRadii = ComputeHoleHitRadii();
+
+        static float[] ComputeHoleHitRadii()
+        {
+            var radii = new float[HolePositions.Length];
+            for (int i = 0; i < HolePositions.Length; i++)
+            {
+                float minDist = float.MaxValue;
+                for (int j = 0; j < HolePositions.Length; j++)
+                {
+                    if (i == j) continue;
+                    float d = Vector2.Distance(HolePositions[i], HolePositions[j]);
+                    if (d < minDist) minDist = d;
+                }
+                radii[i] = Mathf.Min(HoleHitRadiusMax, minDist * 0.5f * HoleHitRadiusSafetyFactor);
+            }
+            return radii;
+        }
+
+        // Centers the tap collider on the bunny's torso/face instead of its feet - a uniform
+        // vertical shift is always safe regardless of neighbouring holes (it moves every hole's
+        // zone by the same amount, so pairwise distances, and therefore the radii above, are
+        // unaffected).
+        public static readonly float HoleHitOffsetY = 1.1f;
 
         public struct SpeedParams
         {

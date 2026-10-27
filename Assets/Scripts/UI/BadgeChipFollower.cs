@@ -16,7 +16,7 @@ namespace BunnyPick.UI
         public CanvasGroup visibilityGroup;
         public Image badgeImage;
         public Camera worldCamera;
-        public Vector3 worldOffset = new Vector3(-0.6f, 1.2f, 0f);
+        public Vector3 worldOffset = new Vector3(-0.34f, 0.68f, 0f);
 
         public Sprite badgeExtraLife;
         public Sprite badgeSlowTime;

@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Bunny Pick.sln"
+    "dotnet.defaultSolution": "Bunny_Pick.sln"
 }

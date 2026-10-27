@@ -1,5 +1,6 @@
 using BunnyPick.Data;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace BunnyPick.Gameplay
 {
@@ -16,7 +17,8 @@ namespace BunnyPick.Gameplay
 
         public Transform bunnyPivot;
         public SpriteRenderer bunnySprite;
-        public Sprite[] bunnyColorSprites; // parallel to GameData.BunnyColors
+        public Color[] bunnyColorTints; // parallel to GameData.BunnyColors, multiplied onto bunnySprite
+        public Sprite[] bunnyCharacterSprites; // the 2 bunny art variants; picked by color index parity
 
         public Transform teddyPivot;
         public SpriteRenderer teddySprite;
@@ -73,6 +75,9 @@ namespace BunnyPick.Gameplay
             if (_lastBunnyColor != b.Color)
             {
                 _lastBunnyColor = b.Color;
+                Color tint = LookupBunnyTint(b.Color);
+                tint.a = bunnySprite.color.a;
+                bunnySprite.color = tint;
                 bunnySprite.sprite = LookupBunnySprite(b.Color);
             }
 
@@ -132,18 +137,33 @@ namespace BunnyPick.Gameplay
             if (hintRing.gameObject.activeSelf != show) hintRing.gameObject.SetActive(show);
         }
 
+        Color LookupBunnyTint(string color)
+        {
+            if (bunnyColorTints == null || bunnyColorTints.Length == 0) return Color.white;
+            for (int i = 0; i < GameData.BunnyColors.Length && i < bunnyColorTints.Length; i++)
+            {
+                if (GameData.BunnyColors[i] == color) return bunnyColorTints[i];
+            }
+            return bunnyColorTints[0];
+        }
+
+        // Alternates the two bunny art variants by each color's position in GameData.BunnyColors
+        // (white/skyblue/lavender get one, pink/lemon/mint the other) so both are seen roughly as
+        // often, without needing a separate "which sprite" field on Bunny itself.
         Sprite LookupBunnySprite(string color)
         {
-            if (bunnyColorSprites == null) return null;
-            for (int i = 0; i < GameData.BunnyColors.Length && i < bunnyColorSprites.Length; i++)
-            {
-                if (GameData.BunnyColors[i] == color) return bunnyColorSprites[i];
-            }
-            return bunnyColorSprites.Length > 0 ? bunnyColorSprites[0] : null;
+            if (bunnyCharacterSprites == null || bunnyCharacterSprites.Length == 0) return null;
+            int colorIndex = System.Array.IndexOf(GameData.BunnyColors, color);
+            int spriteIndex = colorIndex >= 0 ? colorIndex % bunnyCharacterSprites.Length : 0;
+            return bunnyCharacterSprites[spriteIndex];
         }
 
         void OnMouseDown()
         {
+            // OnMouseDown is a physics-collider pick, not a UI one - it fires regardless of
+            // what's drawn on top, so without this check a tap would reach straight through
+            // any open panel (Settings, Info, Exit-confirm, Game Over) to the hole underneath.
+            if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
             GameManager.Instance?.TapHole(holeIndex);
         }
     }
